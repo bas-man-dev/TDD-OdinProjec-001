@@ -16,4 +16,9 @@ describe Calculator do
       expect(calculator.multiply(3, 4)).to eql(12)
     end
   end
+  describe '#multiply' do
+    it 'returns the first number minus the second number' do
+      expect(calculator.subtract(5, 2)).to eq(3)
+    end
+  end
 end
