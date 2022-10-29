@@ -7,4 +7,10 @@ describe Calculator do
         expect(calculator.add(5, 2)).to eql(7)
       end
     end
+
+    it "returns the sum of more than two numbers" do
+        calculator = Calculator.new
+        expect(calculator.add(2, 5, 7)).to eql(14)
+      end
+      
   end
