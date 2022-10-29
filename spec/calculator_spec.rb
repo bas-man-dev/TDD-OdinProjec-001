@@ -21,4 +21,9 @@ describe Calculator do
       expect(calculator.subtract(5, 2)).to eq(3)
     end
   end
+  describe '#divide' do
+    it 'returns the first number divided by the second' do
+        expect(calculator.divide(12, 4)).to eq(3)
+    end
+  end
 end
