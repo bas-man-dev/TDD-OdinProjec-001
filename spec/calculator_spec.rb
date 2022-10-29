@@ -25,6 +25,8 @@ describe Calculator do
     it 'returns the first number divided by the second' do
       expect(calculator.divide(12, 4)).to eq(3)
     end
-    
+    it 'can avoid ZeroDivisionError' do
+      expect(calculator.divide(12,0)).to eq('Divider cannot be zero')
+    end
   end
 end
